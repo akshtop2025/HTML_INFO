@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Validation</title>
+    <style>
+        table,
+        h3,
+        p {
+            text-align: center;
+            font-size: 20px;
+            text-transform: uppercase;
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <h3>Validation</h3>
+    <p>pattern</p>
+
+    <table border="2" align="center">
+        <form action="login.pyton" method="post">
+            <tr>
+                <td colspan="2">Validation form</td>
+            </tr>
+            <tr>
+                <td><label for="Enter first User Name">Enter User Name</label></td>
+                <td><input placeholder="Enetr your Name" type="text"
+                        pattern="[a-zA-Z0-9._%+-]+@[a-z0-9.-]+\.[a-zA-Z]{2,4}" </td>
+            </tr>
+
+
+            <tr>
+                <td><label for="Enter last Name">Enter last Name</label></td>
+                <td><input type="text" placeholder="Enter last Name" required></td>
+            </tr>
+
+
+            <tr>
+                <td><label for="Enter your Email">Enter your Email</label></td>
+                <td><input placeholder="Input email" type="email" title="Invalid email address" name="password"
+                        id="password"></td>
+            </tr>
+
+
+
+            <tr>
+                <td><label for="Enter Your Number ">Enter Your Number</label></td>
+                <td><input type="tel" name="" id="" placeholder="Enter Your Number" required></td>
+            </tr>
+            <tr>
+                <td><label for="Enter your Password">Enter your Password</label></td>
+                <td><input type="password" placeholder="Enter your Password" name="" id=""></td>
+            </tr>
+
+
+            <tr>
+                <td><label for="select gender">select gender</label></td>
+                <td>
+                    male <input type="radio" name="gender" id="male">
+                    female <input type="radio" name="gender" id="female">
+                </td>
+
+            </tr>
+
+
+
+            <tr>
+                <td><label for="select img">select img</label></td>
+                <td><input type="file" name="profile_pic" id="profile_pic" accept="image/*"></td>
+            </tr>
+
+
+            <tr>
+                <td colspan="2"><input type="submit" value="submit"></td>
+            </tr>
+
+        </form>
+    </table>
+
+
+
+
+</body>
+
+</html>

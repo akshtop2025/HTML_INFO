@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Form</title>
+    <style>
+        a {
+            text-decoration: none;
+
+            /* !important  aa css chal  */
+        }
+
+        button {
+            margin: 5px;
+        }
+
+        p {
+            font-size: 20px;
+        }
+
+        table {
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>Form in HTML</h2>
+    <ul>
+
+        <li>
+            <p>The &lt;form&gt; HTML element represents a document section containing
+                interactive
+                controls for submitting
+                information.</p>
+        </li>
+        <li>
+            <p>Getting the Information from the user and send it to the server</p>
+        </li>
+        <li>
+            <p>For sending client data to the server there are tow methods</p>
+        </li>
+    </ul>
+    <ol>
+        <h2> Tow Methods</h2>
+        <li>GET</li>
+        <li>POST (Note: POST method more secure)</li>
+    </ol>
+    <ol>
+        <li><button><a href="post.html">Example post method </a></button></li>
+        <li><button><a href="get.html">Example GET method </a></button></li>
+        <p>Example of Validation form</p>
+        <li><button><a href="Validation in form.html">Example Validation form</a></button></li>
+
+    </ol>
+    <h3>Attributes</h3>
+    <img width="500px" src="additional-attributes.png" alt=""><br>
+    <img width="500px" src="html_input.jpg" alt=""><br>
+    <img width="500px" src="maxresdefault.jpg" alt=""><br>
+
+    <h3>name="" attr will be helps to send data to the server wihout name we are not able to send data to the server
+        except (javascript ajax)</h3>
+    <h3>id="" attr mainly use for js</h3>
+    <h3>class="" attr mainly use for CSS</h3>
+
+
+    <!-- <h3>Action</h3>
+    <p>Server Page url</p>
+    <form action="login.php" method="post">
+        <input type="text" name="username" id="username">
+         <input type="text" name="password" id="password">  
+        <input type="password" name="password" id="password">
+        <input type="submit" name="btn" id="btn">
+    </form>
+      -->
+
+    <h3>simplil</h3>
+
+    <table align="center" border="2">
+        <form action="get.pythone" method="post">
+            <tr>
+                <td colspan="2"><strong>Basic Form Tag</strong></td>
+            </tr>
+
+            <tr>
+                <td><label for="Enter name">Enter name</label></td>
+                <td><input type="text" name="" id=""></td>
+            </tr>
+            <tr>
+                <td><label for="Enter phone number">Enter phone number</label></td>
+                <td><input type="tel" name="" id=""></td>
+            </tr>
+            <tr>
+                <td><label for="Enter nay number">Enter nay number</label></td>
+                <td><input type="number" name="" id=""></td>
+            </tr>
+            <tr>
+                <td><label for="Enetr email">Enetr email</label></td>
+                <td><input type="email" name="" id=""></td>
+            </tr>
+            <tr>
+                <td><label for="Enter password">Enter password</label></td>
+                <td><input type="password" name="" id=""></td>
+            </tr>
+            <tr>
+                <td><label for="search">search</label></td>
+                <td><input type="search" name="" id=""></td>
+            </tr>
+            <tr>
+                <td><label for="URL">enter URL</label></td>
+                <td><input type="url" name="" id=""></td>
+            </tr>
+            <tr>
+                <td><label for="salary">salary</label></td>
+                <td><input type="range" name="" id=""></td>
+            </tr>
+            <tr>
+                <td><label for="select file">select file</label></td>
+                <td><input type="file" name="" id=""></td>
+            </tr>
+            <tr>
+                <td><label for="select car">select car</label></td>
+                <td>
+                    BMW<input type="checkbox" name="bmw" id="">
+                    AODI<input type="checkbox" name="Aodi" id="">
+                </td>
+            </tr>
+            <tr>
+                <td><label for="select gender">select gender</label></td>
+                <td>
+                    Male<input type="radio" name="gender" id="male">
+                    Female<input type="radio" name="gender" id="female">
+                </td>
+            </tr>
+            <tr>
+                <td><label for="hidden">hidden</label></td>
+                <td><input type="hidden" name=""></td>
+            </tr>
+            <tr>
+                <td><label for="datetime-local">datetime-local</label></td>
+                <td><input type="datetime-local" name="" id=""></td>
+            </tr>
+            <tr>
+                <td><label for="time">time</label></td>
+                <td><input type="time"></td>
+            </tr>
+            <tr>
+                <td><label for="data">data</label></td>
+                <td><input type="date" name="" id=""></td>
+            </tr>
+            <tr>
+                <td><label for="week">week</label></td>
+                <td><input type="week"></td>
+            </tr>
+            <tr>
+                <td><label for="month">month</label></td>
+                <td><input type="month"></td>
+            </tr>
+            <tr>
+                <td><label for="color">color</label></td>
+                <td><input type="color"></td>
+            </tr>
+            <tr>
+                <td><label for="">option</label></td>
+                <td>
+                    <select name="education" id="" multiple> select one and more option to use multiple
+                        <option value="">1</option>
+                        <option value="">10</option>
+                        <option value="">12</option>
+                    </select>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td><label for="submit">submit</label></td>
+                <td><input type="submit"></td>
+            </tr>
+            <tr>
+                <td><label for="reset">reset</label></td>
+                <td><input type="reset" value="reset"></td>
+            </tr>
+            <tr>
+                <td><label for="button">button</label></td>
+                <td><input type="button"></td>
+            </tr>
+            <tr>
+                <td><label for="img">img</label></td>
+                <td><input type="image" src="./maxresdefault.jpg" alt="Submit" width="48" height="48"></td>
+            </tr>
+
+
+
+        </form>
+    </table>
+
+
+    <ol>
+        <li> &lt;input type="text"&gt;</li>
+        <li> &lt;input type="tel"&gt;</li>
+        <li> &lt;input type="number"&gt;</li>
+        <li> &lt;input type="email"&gt;</li>
+        <li> &lt;input type="password"&gt;</li>
+        <li> &lt;input type="search"&gt;</li>
+        <li> &lt;input type="url"&gt;</li>
+        <li> &lt;input type="range"&gt;</li>
+        <li> &lt;input type="file"&gt;</li>
+        <li> &lt;input type="checkbox"&gt;</li>
+        <li> &lt;input type="radio"&gt;</li>
+        <li> &lt;input type="hidden"&gt;</li>
+        <li> &lt;input type="datetime-local"&gt;</li>
+        <li> &lt;input type="time"&gt;</li>
+        <li> &lt;input type="date"&gt;</li>
+        <li> &lt;input type="week"&gt;</li>
+        <li> &lt;input type="month"&gt;</li>
+        <li> &lt;input type="color"&gt;</li>
+        <li> &lt;input type="submit"&gt;</li>
+        <li> &lt;input type="reset"&gt;</li>
+        <li> &lt;input type="button"&gt;</li>
+        <li> &lt;input type="image"&gt;</li>
+    </ol>
+</body>
+
+</html>

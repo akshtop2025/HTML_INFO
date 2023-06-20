@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML File Paths</title>
+    <style>
+        a {
+            text-decoration: none;
+        }
+
+        button:hover {
+            color: deeppink;
+            font-size: 15px;
+            /* scale: 50%; */
+            /* transform: scale(50px); */
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Two Type of Paths</h1>
+
+    <ul>
+        <p>File paths are used when linking to external files, like:</p>
+        <li>Web pages</li>
+        <li>Images</li>
+        <li>Style sheets</li>
+        <li>JavaScripts</li>
+    </ul>
+
+
+    <ol>
+        <li>Relative Path</li>
+        <li>Absolute Path</li>
+    </ol>
+
+
+    <h1>1. Relative Path</h1>
+
+    <p><strong>1.Relative Path</strong> In the following example, the file path points to a file in the images folder
+        located in the folder one level up from the current folder:</p>
+
+    <ol>
+        <li>Example:</li>
+    </ol>
+
+    <pre>
+        syntax  :    &lt;img src="../images/picture.jpg" alt="Mountain"&gt;
+    </pre>
+    <button><a href="RelativePath.html">RelativePath</a></button>
+
+
+    <hr>
+
+    <!-- <base href="../img/"> -->
+
+    <h1>2. Absolute Path</h1>
+    <p>An absolute file path is the full Path to a file:</p>
+
+    <ol start="2">
+        <li>Example:</li>
+    </ol>
+
+    <pre>
+            syntax:  
+
+            &lt;base href="../img/"&gt;
+
+            &lt;img src="/Users/user_name/Desktop/folder_name/file_name.png" alt="&gt;
+        </pre>
+
+    <button><a href="AbsolutePath.html">AbsolutePath</a></button>
+
+</body>
+
+</html>

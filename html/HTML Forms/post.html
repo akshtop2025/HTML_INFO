@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table {
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+
+    <ul>
+        <li>POST will be sending form data without using the URL</li>
+        <li>POST method is secure because its not sending data by URL</li>
+        <li>There is no limitation for POST method for seding data to the server</li>
+        <li>POST method support file uploading</li>
+        <li>while file uploading we must required to add enctype="multipart/form-data" attr</li>
+        <li>we are not getting data after refreshing/realoading our page in POST method </li>
+        <li>wnt able to do bookmarked post method form data</li>
+        <li>POST method is slower than get</li>
+        <li>POST method preferrable while securely sending data</li>
+    </ul>
+
+
+    <h3>File</h3>
+    <p>enctype="multipart/form-data"</p>
+    <!-- <form action="login.php" enctype="multipart/form-data" method="post">
+         <form action="login.php" method="post"> 
+        <input type="text" name="username" id="username">
+        <input type="password" name="password" id="password">
+         <input type="file" name="profile_pic" id="profile_pic">
+        <input type="file" name="profile_pic" id="profile_pic" accept="image/*">
+        <input type="submit" name="btn" id="btn">
+    </form> -->
+
+    <h3>second form</h3>
+
+    <table border="2" align="center">
+
+
+        <form action="login.php" enctype="multipart/form-data" method="post">
+            <tr>
+                <td colspan="2">POST FORM</td>
+            </tr>
+            <tr>
+                <td><label for="Enter your first  name">Enter your name</label></td>
+                <td><input type="text" name="" id="" placeholder="Enter your name"></td>
+            </tr>
+            <tr>
+                <td><label for="Enter your Last Name">Enter Last Name</label></td>
+                <td><input type="text" name="" id="" placeholder="Enter Last Name"></td>
+            </tr>
+
+            <tr>
+                <td><label for="Enetr Your Name">Enetr Your Name</label></td>
+                <td><input type="password" name="" id="" placeholder="Enetr Your Name"></td>
+            </tr>
+
+            <tr>
+                <td> <label for="select your file">select your img</label></td>
+                <td><input type="file" name="" id="" accept="img/*"></td>
+            </tr>
+
+            <tr>
+
+                <td colspan="2">
+                    <input type="submit" name="btn" id="btn">
+                </td>
+            </tr>
+        </form>
+
+    </table>
+
+
+
+</body>
+
+</html>
